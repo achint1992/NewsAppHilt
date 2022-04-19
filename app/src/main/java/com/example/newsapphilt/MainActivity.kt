@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         fragmentController?.let { binding.bottomNav.setupWithNavController(it) }
         viewModel = ViewModelProvider(this, factory)[NewsViewModel::class.java]
         Log.e("trying second ","commit")
-        asdfadfasdgasga
     }
 
 
