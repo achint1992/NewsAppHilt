@@ -1,6 +1,7 @@
 package com.example.newsapphilt
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentController = navFragment?.findNavController()
         fragmentController?.let { binding.bottomNav.setupWithNavController(it) }
         viewModel = ViewModelProvider(this, factory)[NewsViewModel::class.java]
-
+        Log.e("trying second ","commit")
     }
 
 
