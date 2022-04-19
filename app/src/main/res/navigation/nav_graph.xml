@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/topHeadlinesFragment">
+
+    <fragment
+        android:id="@+id/topHeadlinesFragment"
+        android:name="com.example.newsapphilt.presentation.top.news.TopHeadlinesFragment"
+        android:label="fragment_top_headlines"
+        tools:layout="@layout/fragment_top_headlines" >
+        <action
+            android:id="@+id/action_topHeadlinesFragment_to_viewNewsFragment"
+            app:destination="@id/viewNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.example.newsapphilt.presentation.saved.news.SavedNewsFragment"
+        android:label="fragment_saved_news"
+        tools:layout="@layout/fragment_saved_news" >
+        <action
+            android:id="@+id/action_savedNewsFragment_to_viewNewsFragment"
+            app:destination="@id/viewNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewNewsFragment"
+        android:name="com.example.newsapphilt.presentation.view.news.ViewNewsFragment"
+        android:label="fragment_view_news"
+        tools:layout="@layout/fragment_view_news" >
+        <argument
+            android:name="article"
+            app:argType="com.example.newsapphilt.data.model.Article" />
+    </fragment>
+</navigation>
