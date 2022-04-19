@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         fragmentController?.let { binding.bottomNav.setupWithNavController(it) }
         viewModel = ViewModelProvider(this, factory)[NewsViewModel::class.java]
         Log.e("trying new Branch ","Development Branch")
-        Log.e("Changing","Commit 2")
+        Log.e("Changing","commit 2")
     }
 
 
