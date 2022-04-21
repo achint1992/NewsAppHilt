@@ -48,8 +48,7 @@ android {
         ignoreWarnings = true
         // If true, lint also checks all dependencies as part of its analysis. Recommended for
         // projects consisting of an app with library dependencies.
-        isCheckDependencies = false
-        baseline = file("lint-baseline.xml")
+
     }
 
     buildFeatures {
