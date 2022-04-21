@@ -33,7 +33,7 @@ jobs:
         run: ./gradlew -v
 
       - name: Checking Lint Error
-        run: ./gradlew lintDebug
+        run: ./gradlew lintDebug --stacktrace
 
       - name: Upload html test report
         uses: actions/upload-artifact@v2
