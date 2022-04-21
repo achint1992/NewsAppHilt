@@ -28,7 +28,7 @@ android {
     buildTypes {
         def CONFIG = { k -> "\"${project.properties.get(k)}\"" }
         debug {
-            buildConfigField "String", "API_KEY", CONFIG("MY_KEY")
+            buildConfigField "String", "API_KEY", CONFIG(MY_KEY)
         }
         release {
             minifyEnabled false
