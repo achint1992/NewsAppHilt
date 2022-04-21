@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Checking Lint Error
-        uses: ./gradlew lintDebug
+        run: ./gradlew lintDebug
 
       - name: Upload html test report
         uses: actions/upload-artifact@v2
