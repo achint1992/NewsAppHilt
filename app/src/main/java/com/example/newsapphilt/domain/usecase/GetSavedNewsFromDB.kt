@@ -5,5 +5,5 @@ import com.example.newsapphilt.domain.repository.NewsRepository
 import kotlinx.coroutines.flow.Flow
 
 class GetSavedNewsFromDB(val newsRepository: NewsRepository) {
-    suspend fun execute(): Flow<List<Article>> = newsRepository.getSavedFromDB()
+     fun execute(): Flow<List<Article>> = newsRepository.getSavedFromDB()
 }

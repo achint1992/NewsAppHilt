@@ -1,7 +1,6 @@
 package com.example.newsapphilt.data.repository.datasourceimpl
 
 import com.example.newsapphilt.data.api.NewsService
-import com.example.newsapphilt.data.model.Article
 import com.example.newsapphilt.data.model.NewsResponse
 import com.example.newsapphilt.data.repository.datasource.RemoteDataStore
 import retrofit2.Response

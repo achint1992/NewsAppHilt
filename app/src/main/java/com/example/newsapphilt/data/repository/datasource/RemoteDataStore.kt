@@ -1,6 +1,5 @@
 package com.example.newsapphilt.data.repository.datasource
 
-import com.example.newsapphilt.data.model.Article
 import com.example.newsapphilt.data.model.NewsResponse
 import retrofit2.Response
 

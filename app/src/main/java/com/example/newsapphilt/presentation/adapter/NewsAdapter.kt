@@ -52,7 +52,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
                 .load(article.urlToImage)
                 .into(binding.ivArticleImage)
 
-            binding.root.setOnClickListener { view ->
+            binding.root.setOnClickListener {
                 listner?.let {
                     it(article)
                 }
